@@ -8,7 +8,6 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'bootstrap';
-import { initTyped } from '../plugins/init_typedjs.js';
 import { initSweetalert } from '../plugins/init_sweetalert';
 import { initSelect2 } from '../plugins/init_select2';
 import AOS from 'aos';
@@ -22,7 +21,6 @@ ActiveStorage.start()
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   // [...]
-  initTyped();
   initSweetalert();
   initSelect2();
   AOS.init();
