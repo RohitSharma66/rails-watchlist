@@ -1,9 +1,11 @@
-<div class="cover d-flex align-items-center justify-content-center" style="background-image:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= cl_image_path @list.photo.key, height: 300, crop: :fill %>')">
+<div class="cover d-flex align-items-center justify-content-center" style="background-image:  linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url()">
   <div class="text-white h1">
     <div><%= @list.name %><span> movies</span></div>
   </div>
     <div class="movie-tag"><%= pluralize(@list.movies.count, 'movie') %></div>
 </div>
+
+<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 
 <div class="container">
   <div class="d-flex justify-content-between my-4">
