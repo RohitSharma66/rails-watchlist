@@ -8,7 +8,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'bootstrap';
-import { initSelect2 } from '../plugins/init_select2';
+import { initSelect2 } from './plugins/init_select2';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
