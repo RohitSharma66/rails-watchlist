@@ -2,10 +2,9 @@
   <div class="text-white h1">
     <div><%= @list.name %><span> movies</span></div>
   </div>
-    <div class="movie-tag"><%= pluralize(@list.movies.count, 'movie') %></div>
+     <span class="movie-tag"><%= pluralize(@list.movies.size, 'movie') %></span>
 </div>
 
-<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
 
 <div class="container">
   <div class="d-flex justify-content-between my-4">
@@ -16,6 +15,7 @@
       </div>
   </div>
 </div>
+
 
 
 <div class="container">
