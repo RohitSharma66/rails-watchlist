@@ -16,7 +16,7 @@
     <% @lists.each do |list| %>
       <div class="col-12 col-md-4 col-sm-6 mb-3">
         <%= link_to list_path(list), class:"text-decoration-none" do %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : asset_path('america.jpg') %>)">
+          <div class="card-category index-small-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : asset_path('america.jpg') %>)">
             <h4><%= list.name %></h4>
           </div>
         <% end %>
