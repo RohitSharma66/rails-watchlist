@@ -73,6 +73,7 @@ GEM
       rest-client (>= 2.0.0)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
+    date (3.1.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.6)
@@ -113,6 +114,10 @@ GEM
     nokogiri (1.11.3)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    open-uri (0.1.0)
+      stringio
+      time
+      uri
     pg (1.2.3)
     puma (5.2.2)
       nio4r (~> 2.0)
@@ -181,8 +186,11 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    stringio (3.0.0)
     thor (1.1.0)
     tilt (2.0.10)
+    time (0.1.0)
+      date
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -191,6 +199,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
+    uri (0.10.1)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -217,6 +226,7 @@ DEPENDENCIES
   dotenv-rails
   font-awesome-sass (~> 5.12.0)
   listen (~> 3.3)
+  open-uri
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
